@@ -1,9 +1,6 @@
 package com.legartak.agecalculator.persistence.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -11,7 +8,6 @@ import java.time.LocalDate;
 public class PersonEntity {
 
     @Id
-    @GeneratedValue
     private int id;
     private String name;
     private String surname;
